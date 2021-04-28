@@ -10,7 +10,7 @@
     Execute NodeJS Automation Tests on LambdaTest Distributed Selenium Grid
 */
 const webdriver = require('selenium-webdriver');
- 
+var assert = require('assert'); 
 /*
     Setup remote driver
     Params
@@ -41,8 +41,8 @@ function searchTextOnGoogle() {
         console: true,
         video: true,
         tunnel: true,
-        name: 'Test Demo Gurgaon', // name of the test
-        build: 'NodeJS build' // name of the build
+        name: 'Test Demo 0335HRLastCommit', // name of the test
+        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
     }
  
     // URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
