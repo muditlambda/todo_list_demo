@@ -21,10 +21,10 @@ const webdriver = require('selenium-webdriver');
 */
  
 // username: Username can be found at automation dashboard
-const USERNAME = 'mudits';
+const USERNAME = process.env.LT_USERNAME;
  
 // AccessKey:  AccessKey can be generated from automation dashboard or profile section
-const KEY = 'JdkSYoBcmZJ8xPHNCjL9CdBhYzcshYGXmgphdCjspipMlpkrJo';
+const KEY = process.env.LT_KEY;
  
 // gridUrl: gridUrl can be found at automation dashboard
 const GRID_HOST = 'hub.lambdatest.com/wd/hub';
