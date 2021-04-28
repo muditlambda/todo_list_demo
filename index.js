@@ -56,14 +56,19 @@ function searchTextOnGoogle() {
  
     // navigate to a url, search for a text and get title of page
     driver.get('http://localhost:8888').then(function() {
-        //driver.findElement(webdriver.By.name('q')).sendKeys('LambdaTest\n').then(function() {
-            driver.getTitle().then(function(title) {
-                setTimeout(function() {
-                    console.log(title);
-                    driver.quit();
-                }, 5000);
-            });
+        driver.getTitle().then(function(title) {
+            setTimeout(function() {
+                console.log(title);
+                assert.strictEqual(title, "Sample page - lambdatest.com");
+                driver.executeScript('lambda-status=passed');
+                driver.quit();
+            }, 5000);
         });
-    //});
+        
+    }).catch(function(error){
+        console.log("test failed with reason "+ error)
+        driver.executeScript('lambda-status=failed');
+        driver.quit();
+    });
 }
 searchTextOnGoogle();
