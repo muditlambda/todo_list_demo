@@ -54,8 +54,8 @@ function searchTextOnGoogle() {
         .build();
  
     // navigate to a url, search for a text and get title of page
-    driver.get('https://www.google.com/ncr').then(function() {
-        driver.findElement(webdriver.By.name('q')).sendKeys('LambdaTest\n').then(function() {
+    driver.get('http://localhost:8888').then(function() {
+        //driver.findElement(webdriver.By.name('q')).sendKeys('LambdaTest\n').then(function() {
             driver.getTitle().then(function(title) {
                 setTimeout(function() {
                     console.log(title);
@@ -63,6 +63,6 @@ function searchTextOnGoogle() {
                 }, 5000);
             });
         });
-    });
+    //});
 }
 searchTextOnGoogle();

@@ -1,10 +1,25 @@
 {
   
- "scripts" : {
- 	"unit" : "node index.js",
-  	"test" : "npm run unit"
+
+ "scripts": {
+  
+ "server": "http-server -p 8888 ./ > /dev/null 2>&1 &",
+
+ "unit": "node index.js",
+
+ "test": "npm run unit"
+  
+
  },
-"dependencies": {
-    "selenium-webdriver": "*"
-  }
+  
+
+ "dependencies": {
+  
+
+ "http-server": "^0.12.3",
+  
+ "selenium-webdriver": "*"
+  
+
+ }
 }
