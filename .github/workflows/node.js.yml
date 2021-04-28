@@ -33,4 +33,11 @@ jobs:
       env:
           LT_USERNAME: ${{ secrets.LT_USERNAME }}
           LT_KEY: ${{ secrets.LT_KEY }} 
-      run: npm test
+    - name: Start Tunnel
+           uses : LambdaTest/LambdaTest-tunnel-action@v1
+           id : tunnel
+           with:
+               user: ${{ secrets.LT_EMAIL }}
+               accessKey: ${{ secrets.LT_ACCESS_KEY }}
+               tunnelName: "testTunnel"
+    - run: npm test
