@@ -1,7 +1,7 @@
 {
   
  "scripts" : {
- 	"unit" : "node index2.js",
+ 	"unit" : "node index.js",
   	"test" : "npm run unit"
  },
 "dependencies": {
