@@ -1,0 +1,10 @@
+{
+  
+ "scripts" : {
+ 	"unit" : "node index2.js",
+  	"test" : "npm run unit"
+ },
+"dependencies": {
+    "selenium-webdriver": "*"
+  }
+}
