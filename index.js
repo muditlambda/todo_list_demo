@@ -40,6 +40,7 @@ function searchTextOnGoogle() {
         visual: true,
         console: true,
         video: true,
+        tunnel: true,
         name: 'Test Demo Gurgaon', // name of the test
         build: 'NodeJS build' // name of the build
     }
