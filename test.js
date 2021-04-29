@@ -88,7 +88,7 @@ const capabilities4 = {
 // URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
 const gridUrl = 'https://' + USERNAME + ':' + KEY + '@' + GRID_HOST;
  
-function runTestOnLambdaTest() {
+function runTestOnLambdaTest(capabilities) {
     // Setup Input capabilities
 
  
