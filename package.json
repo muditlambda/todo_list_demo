@@ -5,7 +5,7 @@
   
  "server": "http-server -p 8888 ./ > /dev/null 2>&1 &",
 
- "unit": "node index.js",
+ "unit": "node test.js",
 
  "test": "npm run unit"
   
