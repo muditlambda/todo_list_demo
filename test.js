@@ -72,9 +72,9 @@ const capabilities3 = {
 }
 
 const capabilities4 = {
-        platform: 'MacOS Catalina',
+        platform: 'windows 10',
         browserName: 'chrome',
-        version: 'latest',
+        version: 'latest-1',
         resolution: '1280x800',
         network: true,
         visual: true,
@@ -106,7 +106,7 @@ function runTestOnLambdaTest(capabilities) {
                 assert.strictEqual(title, "Sample page - lambdatest.com");
                 driver.executeScript('lambda-status=passed');
                 driver.quit();
-            }, 5000);
+            }, 500);
         });
         
     }).catch(function(error){
