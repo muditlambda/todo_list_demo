@@ -106,7 +106,7 @@ function runTestOnLambdaTest(capabilities) {
                 assert.strictEqual(title, "Sample page - lambdatest.com");
                 driver.executeScript('lambda-status=passed');
                 driver.quit();
-            }, 500);
+            }, 400);
         });
         
     }).catch(function(error){
