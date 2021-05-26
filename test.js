@@ -40,7 +40,7 @@ const capabilities1 = {
         video: true,
         tunnel: true,
         name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        build: 'NodeJS GitHub Actions Build 29-05-2021' // name of the build
 }
 
 const capabilities2 = {
@@ -54,7 +54,7 @@ const capabilities2 = {
         video: true,
         tunnel: true,
         name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        build: 'NodeJS GitHub Actions Build 29-05-2021' // name of the build
 }
 
 const capabilities3 = {
@@ -68,7 +68,7 @@ const capabilities3 = {
         video: true,
         tunnel: true,
         name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        build: 'NodeJS GitHub Actions Build 29-05-2021' // name of the build
 }
 
 const capabilities4 = {
@@ -82,7 +82,7 @@ const capabilities4 = {
         video: true,
         tunnel: true,
         name: 'Test Demo 2210HRLastCommit', // name of the test
-        build: 'NodeJS GitHub Actions Build 29-04-2021' // name of the build
+        build: 'NodeJS GitHub Actions Build 29-05-2021' // name of the build
 }
  
 // URL: https://{username}:{accessKey}@hub.lambdatest.com/wd/hub
