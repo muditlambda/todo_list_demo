@@ -1,0 +1,13 @@
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+runson: win
+autosplit: true
+concurrency: 4
+testDiscoverer: grep 'test name' src/test/java/testng.xml | awk '{print$2}' | sed 's/name=//g' | sed 's/\x3e//g' #sed 's/>//g'
+testRunnerCommand: mvn test `-DselectedTests="$test" `-DLT_USERNAME="user" `-DLT_ACCESS_KEY="1234567890344567" `-Dmaven.repo.local=./.m2 `-nsu
+pre:
+  - mvn -Dmaven.repo.local=./.m2 dependency:resolve
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - .m2
