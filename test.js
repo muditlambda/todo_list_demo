@@ -17,7 +17,7 @@ var assert = require('assert');
     ----------
     platform : Supported platform - (Windows 10, Windows 8.1, Windows 8, Windows 7,  macOS High Sierra, macOS Sierra, OS X El Capitan, OS X Yosemite, OS X Mavericks)
     browserName : Supported platform - (chrome, firefox, Internet Explorer, MicrosoftEdge, Safari)
-    version :  Supported list of version can be found at https://www.lambdatest.com/capabilities-generator/
+    version :  Supported list of version can be found at https://www.lambdatest.com/capabilities-generator
 */
  
 // username: Username can be found at automation dashboard
